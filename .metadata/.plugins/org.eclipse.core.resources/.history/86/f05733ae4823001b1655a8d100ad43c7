@@ -7,7 +7,7 @@ public class ListEntity1 {
 	
 	private ListEntity1() {
 		this.listEntity1 = new ArrayList<>();
-		this.lastId = 0;
+		this.lastId = 1;
 		for (int i = 0; i < 20; i++) {
 			this.addEntity1();
 		}
