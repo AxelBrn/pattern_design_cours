@@ -1,0 +1,10 @@
+package fr.mds.axel.java.model;
+
+public class Circle implements Shape {
+
+	@Override
+	public void draw() {
+		System.out.println("Circle::draw()");
+	}
+
+}
