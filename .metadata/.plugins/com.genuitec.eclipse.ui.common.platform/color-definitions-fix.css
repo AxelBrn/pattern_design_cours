@@ -1877,8 +1877,8 @@ IEclipsePreferences#org-eclipse-jdt-ui {
 		'semanticHighlighting.parameterVariable.italic=false'
 		'semanticHighlighting.parameterVariable.strikethrough=false'
 		'semanticHighlighting.parameterVariable.underline=false'
-		'semanticHighlighting.recordKeyword.bold=false'
-		'semanticHighlighting.recordKeyword.color=197,104,28'
+		'semanticHighlighting.restrictedKeywords.bold=false'
+		'semanticHighlighting.restrictedKeywords.color=197,104,28'
 		'semanticHighlighting.staticField.bold=false'
 		'semanticHighlighting.staticField.color=239,192,144'
 		'semanticHighlighting.staticField.enabled=true'
@@ -1909,10 +1909,6 @@ IEclipsePreferences#org-eclipse-jdt-ui {
 		'semanticHighlighting.typeParameter.italic=false'
 		'semanticHighlighting.typeParameter.strikethrough=false'
 		'semanticHighlighting.typeParameter.underline=false'
-		'semanticHighlighting.varKeyword.bold=false'
-		'semanticHighlighting.varKeyword.color=197,104,28'
-		'semanticHighlighting.yieldKeyword.bold=false'
-		'semanticHighlighting.yieldKeyword.color=197,104,28'
 		'sourceHoverBackgroundColor=66,68,69'
 }
 IEclipsePreferences#org-eclipse-jst-jsp-ui {

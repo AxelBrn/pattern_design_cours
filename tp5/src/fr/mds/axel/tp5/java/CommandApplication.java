@@ -40,8 +40,24 @@ public class CommandApplication {
 	  globalStock.showStock();
 	  
 	  globalStock.bought(new ConcreteCommand(new Stock("myItem", 20)));
-	  globalStock.sold(new ConcreteCommand(new Stock("myItem", 20)));
-	  globalStock.sold(new ConcreteCommand(new Stock("apple", 4)));
+	  try {
+		globalStock.sold(new ConcreteCommand(new Stock("myItem", 20)));
+	} catch (CloneNotSupportedException e1) {
+		// TODO Auto-generated catch block
+		e1.printStackTrace();
+	} catch (Exception e1) {
+		// TODO Auto-generated catch block
+		e1.printStackTrace();
+	}
+	  try {
+		globalStock.sold(new ConcreteCommand(new Stock("apple", 4)));
+	} catch (CloneNotSupportedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	  globalStock.bought(new ConcreteCommand(new Stock("pineapple", 7)));
 	  
 	  System.out.println();

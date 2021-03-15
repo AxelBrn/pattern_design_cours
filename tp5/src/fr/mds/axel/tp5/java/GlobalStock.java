@@ -30,11 +30,14 @@ public class GlobalStock {
 		}
 	}
 	
-	public void sold(Command command) throws CloneNotSupportedException {
+	public void sold(Command command) throws CloneNotSupportedException, Exception {
 		if (command.sold()) {
 			this.invoker.push(command);
 			for(int i = 0; i < this.stocks.size(); i++) {
 				if(command.getStock().getName() == this.stocks.get(i).getName()) {
+					if(this.stocks.get(i).getQuantity() - command.getStock().getQuantity() <= 0) {
+						throw new Exception();
+					}
 					this.stocks.get(i).setQuantity(this.stocks.get(i).getQuantity() - command.getStock().getQuantity());
 				}
 			}
